@@ -1,0 +1,105 @@
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1F456E;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+img {
+  aspect-ratio: 1/1;
+  width:350px;
+  text-align: center;
+
+}
+
+h1 {
+  margin-top: 30px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+div {
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+
+p {
+  text-align: center;
+
+}
+
+.alice-carousel__stage-item {
+  padding-top: 30px;
+  text-align: center;
+}
+
+h4 {
+  display: inline;
+  padding-right: 150px;
+}
+
+.biography {
+  text-align: center;
+  display: block;
+  padding-top: 50px;
+  padding-left: 250px;
+  padding-right: 250px;
+}
+
+.toolbar {
+  padding-top: 20px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.header {
+  display: inline-flex;
+  align-content: center;
+  text-align: center;
+  padding-right: 30px;
+  margin-left: 30px;
+  
+}

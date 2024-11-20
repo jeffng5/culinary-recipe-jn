@@ -1,0 +1,25 @@
+{
+  "name": "recipe-culinary",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "15.0.3",
+    "next-fonts": "^1.5.1",
+    "react": "19.0.0-rc-66855b96-20241106",
+    "react-alice-carousel": "^2.9.1",
+    "react-carousel": "^4.3.0",
+    "react-dom": "19.0.0-rc-66855b96-20241106",
+    "react-elastic-carousel": "^0.11.5",
+    "styled-components": "^5.3.11"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "15.0.3"
+  }
+}
