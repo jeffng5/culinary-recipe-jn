@@ -1,8 +1,8 @@
 'use client'
-import ToolBar from './components/Toolbar'
+import '../globals.css'
+import ToolBar from '../components/Toolbar'
 import AliceCarousel from 'react-alice-carousel'
 import 'react-alice-carousel/lib/alice-carousel.css';
-import './globals.css'
 
 const handleDragStart = (e) => e.preventDefault();
 
@@ -21,30 +21,23 @@ const responsive = {
   1024: { items: 3 },
 };
 
-
-export default function Home() {
-  return (
+export default function favorites() {
+    
+    return (
 
 <main>
-<head>
-<link rel="icon" href="/logo.png" type="image/png" sizes="32x32" /></head>
-
 
         <div className='header'>
-        <img className='logo' src='/logo.png' width="10" height="20"></img>
-          <h1>Chef Jeff's Recipes</h1>
+        <img className='logo' src='/FullLogo_NoBuffer.png' width="10" height="20"></img>
+          <h1 className='header-1'>Chef Jeff's Recipes</h1>
           </div>
+<div className='toolbar'>
+<ToolBar/>
+</div>
 
-
-<div className='toolbar'><ToolBar/></div>
 <div className='toolbar'><AliceCarousel mouseTracking items={items} autoPlay={true} autoPlayInterval={4000} infinite={true} disableButtonsControls={true} disableDotsControls ={true}
 responsive={responsive} /></div>
 
-
-
-
-
-      </main>
-
-  );
+</main>
+    );
 }
